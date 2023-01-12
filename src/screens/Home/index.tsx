@@ -1,13 +1,22 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {SomeComponent} from './components/SomeComponent';
-
+import { View, StyleSheet } from 'react-native';
+import { SomeComponent } from './components/SomeComponent';
+import { DrawerView } from '../Drawer/components/DrawerView';
+import { VStack } from 'native-base';
 type Props = {};
 
 export const HomeScreen = (props: Props) => {
   return (
-    <View>
+    <DrawerView style={styles.container}>
       <SomeComponent />
-    </View>
+    </DrawerView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'blue',
+    zIndex: 999,
+  },
+});

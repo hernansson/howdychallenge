@@ -1,6 +1,6 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {IRootApp} from '../types';
-import {MainApp} from './mainApp';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { IRootApp } from '../types';
+import { MainApp } from './mainApp';
 
 export const AppRouter = () => {
   const Stack = createNativeStackNavigator<IRootApp>();
