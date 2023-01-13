@@ -1,4 +1,4 @@
-import { DrawerNavigation } from '../screens/Drawer';
+import { DrawerNavigation } from '../navigation/mainApp/Drawer';
 import { HomeScreen } from '../screens/Home';
 import { IMainApp } from '../types';
 interface IScreenArray {
@@ -8,7 +8,7 @@ interface IScreenArray {
   component: (props: unknown) => JSX.Element;
   notification: number;
 }
-export const screensArray: IScreenArray[] = [
+export const mainScreens: IScreenArray[] = [
   {
     route: 'Drawer',
     label: 'Drawer',

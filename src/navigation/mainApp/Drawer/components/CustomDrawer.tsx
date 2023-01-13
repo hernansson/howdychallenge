@@ -1,34 +1,30 @@
 import { useDrawerProgress } from '@react-navigation/drawer';
 import { useNavigation } from '@react-navigation/native';
 import { Button, Divider, Text, VStack } from 'native-base';
-import { getCurrentRoute } from '../../../utils/getCurrentRoute';
+import { getCurrentRoute } from '../../../../utils/getCurrentRoute';
 
 import Animated, {
   interpolate,
   useAnimatedStyle,
 } from 'react-native-reanimated';
-import { drawerRoutes } from '../../../constants';
-import { IDrawerNavigationProp } from '../../../types';
+import { drawerRoutes } from '../../../../constants';
+import { IDrawerNavigationProp } from '../../../../types';
 
-interface ICustomerDrawer {
-  navigation: IDrawerNavigationProp;
-}
-export const CustomDrawer = ({ navigation }: ICustomerDrawer) => {
+export const CustomDrawer = ({ navigation }) => {
   const { navigate } = useNavigation<IDrawerNavigationProp>();
   const drawerProgress = useDrawerProgress();
   const viewStyles = useAnimatedStyle(() => {
-    const translateY = interpolate(drawerProgress['value'], [0, 1], [0, 50]);
+    const translateY = interpolate(drawerProgress['value'], [0, 1], [0, 100]);
 
     return {
       transform: [{ translateY }],
-      paddingTop: translateY,
     };
   });
 
   const currentRoute = getCurrentRoute(navigation);
   return (
     <Animated.View style={viewStyles}>
-      <VStack alignItems={'center'} space={4}>
+      <VStack alignItems={'center'} space={4} safeArea>
         <Text color={'white'} fontSize={20} pb={8}>
           BEKA
         </Text>

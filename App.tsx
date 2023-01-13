@@ -17,10 +17,6 @@ const App = () => {
   return (
     <NativeBaseProvider>
       <SafeAreaProvider>
-        <StatusBar
-          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-          backgroundColor={backgroundStyle.backgroundColor}
-        />
         <NavigationContainer>
           <AppRouter />
         </NavigationContainer>

@@ -1,22 +1,21 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { SomeComponent } from './components/SomeComponent';
-import { DrawerView } from '../Drawer/components/DrawerView';
-import { VStack } from 'native-base';
-type Props = {};
+import { DrawerView } from '../../navigation/mainApp/Drawer/components/DrawerView';
+import { Text, VStack } from 'native-base';
 
-export const HomeScreen = (props: Props) => {
+export const HomeScreen = ({ route }) => {
   return (
-    <DrawerView style={styles.container}>
-      <SomeComponent />
-    </DrawerView>
+    <VStack>
+      <SomeComponent name={route.name} />
+    </VStack>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: 'white',
     zIndex: 999,
   },
 });

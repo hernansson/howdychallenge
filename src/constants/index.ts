@@ -1,2 +1,3 @@
-export * from './screens';
-export * from './drawer';
+export * from './mainScreens';
+export * from './drawerScreens';
+export * from './bottomtabsScreens';

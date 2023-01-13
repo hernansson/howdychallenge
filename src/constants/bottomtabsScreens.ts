@@ -1,17 +1,13 @@
 import { HomeScreen } from '../screens/Home';
-import { IDrawer } from '../types';
+import { IBottomtabs } from '../types';
 
-interface IDrawerRoutes {
-  route: keyof IDrawer;
+interface IBottomtabsScreen {
+  route: keyof IBottomtabs;
   label: string;
   component: (props: any) => JSX.Element;
 }
-export const drawerRoutes: IDrawerRoutes[] = [
-  {
-    route: 'Start',
-    label: 'Start',
-    component: HomeScreen,
-  },
+export const bottomTabsScreens: IBottomtabsScreen[] = [
+  { route: 'Start', label: 'Start', component: HomeScreen },
   { route: 'Cart', label: 'Your Cart', component: HomeScreen },
   { route: 'Favourites', label: 'Favourites', component: HomeScreen },
   { route: 'Orders', label: 'Your Orders', component: HomeScreen },
