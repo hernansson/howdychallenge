@@ -9,7 +9,8 @@ export const AppRouter = () => {
       screenOptions={{
         headerShown: false,
         statusBarTranslucent: true,
-        statusBarColor: 'transparent',
+        statusBarColor: 'white',
+        statusBarStyle: 'dark',
       }}>
       <Stack.Group>
         <Stack.Screen name="Main" component={MainApp} />

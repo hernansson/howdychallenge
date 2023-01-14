@@ -1,7 +1,6 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { drawerRoutes } from '../../../constants';
 import { IDrawer } from '../../../types';
 import { BottomTabs } from '../Bottomtabs';
 import { CustomDrawer } from './components/CustomDrawer';
@@ -30,8 +29,9 @@ export const DrawerNavigation = () => {
 
 const styles = StyleSheet.create({
   drawerStyles: {
+    marginTop: 50,
     width: '50%',
-    backgroundColor: 'transparent',
+    backgroundColor: '#1A192A',
     borderTopLeftRadius: 30,
   },
   sceneStyle: {

@@ -9,7 +9,7 @@ export const HomeScreen = ({
   navigation,
 }: NativeStackScreenProps<IHomeStack>) => {
   return (
-    <ScrollView>
+    <ScrollView pt={'5%'}>
       <VStack
         w={'80%'}
         alignSelf={'center'}

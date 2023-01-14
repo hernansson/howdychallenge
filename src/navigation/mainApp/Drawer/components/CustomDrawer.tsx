@@ -11,7 +11,7 @@ import { IDrawer } from '../../../../types';
 export const CustomDrawer = ({ navigation }: DrawerScreenProps<IDrawer>) => {
   const drawerProgress = useDrawerProgress();
   const viewStyles = useAnimatedStyle(() => {
-    const translateY = interpolate(drawerProgress['value'], [0, 1], [0, 100]);
+    const translateY = interpolate(drawerProgress['value'], [0, 1], [0, 150]);
 
     return {
       transform: [{ translateY }],
@@ -34,16 +34,18 @@ export const CustomDrawer = ({ navigation }: DrawerScreenProps<IDrawer>) => {
             onPress={() => {
               navigation.navigate(dr.route);
             }}
-            backgroundColor={
-              currentRoute === dr.route ? '#95270F' : 'transparent'
-            }
+            borderRadius={12}
+            bgColor={currentRoute === dr.route ? '#3F2532' : 'transparent'}
             width={'50%'}>
-            <Text color={'white'}>{dr.label}</Text>
+            <Text color={currentRoute === dr.route ? '#EA6C65' : 'white'}>
+              {dr.label}
+            </Text>
           </Button>
         ))}
 
         <Divider w={'80%'} my={10} bgColor={'coolGray.500'} />
         <Button
+          bgColor={'transparent'}
           alignItems={'flex-start'}
           justifyContent={'flex-start'}
           onPress={() => ({})}

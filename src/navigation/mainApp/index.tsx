@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { IMainApp } from '../../types';
 import { mainScreens } from '../../constants';
+
 type Props = {};
 
 export const MainApp = (props: Props) => {
