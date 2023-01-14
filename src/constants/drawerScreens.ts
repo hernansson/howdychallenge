@@ -1,4 +1,3 @@
-import { BottomTabs } from '../navigation/mainApp/Bottomtabs';
 import { HomeScreen } from '../screens/Home';
 import { IDrawer } from '../types';
 

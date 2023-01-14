@@ -12,24 +12,7 @@ export const BottomTabs = props => {
         screenOptions={{ headerShown: false }}
         backBehavior="history">
         {bottomTabsScreens.map(dr => (
-          <Tab.Screen
-            key={dr.route}
-            name={dr.route}
-            component={dr.component}
-            options={
-              {
-                /*
-            tabBarIcon: ({ focused }) =>
-              focused ? (
-                <SvgImage name="homeFocused" />
-              ) : (
-                <SvgImage name="home" />
-              ),
-            headerShown: false,
-              */
-              }
-            }
-          />
+          <Tab.Screen key={dr.route} name={dr.route} component={dr.component} />
         ))}
       </Tab.Navigator>
     </DrawerView>

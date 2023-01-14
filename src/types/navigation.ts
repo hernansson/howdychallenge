@@ -20,6 +20,13 @@ export type IBottomtabs = {
   Orders: undefined;
 };
 
+export type IHomeStack = {
+  HomeScreen: undefined;
+  ScreenInsideHome1: undefined;
+  ScreenInsideHome2: undefined;
+};
+
 export type IMainAppNavigationProp = NativeStackNavigationProp<IMainApp>;
 export type IDrawerNavigationProp = DrawerNavigationProp<IDrawer>;
 export type IBottomTabsNavigationProp = BottomTabNavigationProp<IBottomtabs>;
+export type IHomeStackNavigationProp = NativeStackNavigationProp<IHomeStack>;
