@@ -8,7 +8,9 @@ const Tab = createBottomTabNavigator<IBottomtabs>();
 export const BottomTabs = props => {
   return (
     <DrawerView {...props}>
-      <Tab.Navigator screenOptions={{ headerShown: false }}>
+      <Tab.Navigator
+        screenOptions={{ headerShown: false }}
+        backBehavior="history">
         {bottomTabsScreens.map(dr => (
           <Tab.Screen
             key={dr.route}
