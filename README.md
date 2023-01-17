@@ -35,7 +35,8 @@
 
 An animated-menu built with React Native
 
- <source src="https://streamable.com/b4vkt3" type="video/mp4">
+<div style="width: 100%; height: 0px; position: relative; padding-bottom: 177.778%;"><iframe src="https://streamable.com/e/b4vkt3" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
