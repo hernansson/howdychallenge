@@ -9,10 +9,26 @@ interface IBottomtabsScreen {
   route: keyof IBottomtabs;
   label: string;
   component: (props: any) => JSX.Element;
+  icon: string;
 }
 export const bottomTabsScreens: IBottomtabsScreen[] = [
-  { route: 'Start', label: 'Start', component: HomeStack },
-  { route: 'Cart', label: 'Your Cart', component: CartScreen },
-  { route: 'Favourites', label: 'Favourites', component: FavouritesScreen },
-  { route: 'Orders', label: 'Your Orders', component: OrdersScreen },
+  { route: 'Start', label: 'Start', component: HomeStack, icon: 'home' },
+  {
+    route: 'Cart',
+    label: 'Your Cart',
+    component: CartScreen,
+    icon: 'cart-variant',
+  },
+  {
+    route: 'Favourites',
+    label: 'Favourites',
+    component: FavouritesScreen,
+    icon: 'heart-outline',
+  },
+  {
+    route: 'Orders',
+    label: 'Your Orders',
+    component: OrdersScreen,
+    icon: 'order-alphabetical-ascending',
+  },
 ];

@@ -1,5 +1,5 @@
 import { Box, Image, View, VStack, Text, HStack, Pressable } from 'native-base';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDrawerProgress, useDrawerStatus } from '@react-navigation/drawer';
 import {
   getFocusedRouteNameFromRoute,
@@ -10,12 +10,10 @@ import Animated, {
   useAnimatedStyle,
 } from 'react-native-reanimated';
 import menuIcon from '../../../../assets/menu.png';
-import { useAnimationContext } from '../../../../providers/AnimationProvider';
+
 export const DrawerView = ({ children, style, ...props }) => {
   const drawerProgress = useDrawerProgress();
-  const drawerStatus = useDrawerStatus();
   const route = useRoute();
-  const { setIsOpen } = useAnimationContext();
   const currentRoute =
     getFocusedRouteNameFromRoute(route)?.toUpperCase() ?? 'Welcome to Howdy';
   const viewStyles = useAnimatedStyle(() => {
@@ -27,14 +25,8 @@ export const DrawerView = ({ children, style, ...props }) => {
     };
   });
 
-  useEffect(() => {
-    setIsOpen(drawerStatus === 'closed' ? false : true);
-  }, [drawerStatus]);
-  console.log(drawerStatus);
   return (
-    <Animated.View
-      style={[viewStyles, style]}
-      onTouchMove={() => console.log('epezo')}>
+    <Animated.View style={[viewStyles, style]}>
       <VStack
         safeArea
         w={'100%'}
