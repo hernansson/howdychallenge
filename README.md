@@ -35,7 +35,7 @@
 
 An animated-menu built with React Native
 
-<img src='https://im5.ezgif.com/tmp/ezgif-5-31b0529886.gif' alt='preview'>
+<img src='https://im5.ezgif.com/tmp/ezgif-5-31b0529886.gif' alt='preview' style='width:50%'>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
