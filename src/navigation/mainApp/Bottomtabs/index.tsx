@@ -17,8 +17,8 @@ export const BottomTabs = props => {
             name={dr.route}
             component={dr.component}
             options={{
-              tabBarIcon: ({ color }) => (
-                <MaterialCommunityIcons name={dr.icon} />
+              tabBarIcon: ({ size }) => (
+                <MaterialCommunityIcons name={dr.icon} size={size} />
               ),
             }}
           />

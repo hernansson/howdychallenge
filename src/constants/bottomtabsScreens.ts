@@ -1,4 +1,3 @@
-import { HomeScreen } from '../screens/Home';
 import { IBottomtabs } from '../types';
 import { HomeStack } from '../navigation/mainApp/Bottomtabs/Home';
 import { CartScreen } from '../screens/Cart';

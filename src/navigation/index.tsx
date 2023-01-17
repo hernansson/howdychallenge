@@ -1,3 +1,4 @@
+import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { IRootApp } from '../types';
 import { MainApp } from './mainApp';

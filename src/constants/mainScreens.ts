@@ -1,5 +1,4 @@
 import { DrawerNavigation } from '../navigation/mainApp/Drawer';
-import { HomeScreen } from '../screens/Home';
 import { IMainApp } from '../types';
 interface IScreenArray {
   route: keyof IMainApp;

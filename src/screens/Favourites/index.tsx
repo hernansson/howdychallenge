@@ -4,10 +4,7 @@ import { Center } from '../../components/commons/Center';
 import { HowdyGreetingButton } from '../../components/commons/HowdyGreetingButton';
 import { IHomeStack } from '../../types';
 
-type Props = {};
-
 export const FavouritesScreen = ({
-  navigation,
   route,
 }: NativeStackScreenProps<IHomeStack>) => {
   return (

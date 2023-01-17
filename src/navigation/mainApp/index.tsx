@@ -3,9 +3,7 @@ import React from 'react';
 import { IMainApp } from '../../types';
 import { mainScreens } from '../../constants';
 
-type Props = {};
-
-export const MainApp = (props: Props) => {
+export const MainApp = () => {
   const Stack = createNativeStackNavigator<IMainApp>();
 
   return (

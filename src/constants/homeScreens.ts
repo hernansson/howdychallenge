@@ -1,4 +1,3 @@
-import { BottomTabs } from '../navigation/mainApp/Bottomtabs';
 import { HomeScreen } from '../screens/Home';
 import { ScreenInsideComponent1 } from '../screens/Home/ScreenInsideHome1';
 import { ScreenInsideComponent2 } from '../screens/Home/ScreenInsideHome2';
